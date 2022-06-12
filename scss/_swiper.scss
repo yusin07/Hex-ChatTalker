@@ -1,0 +1,30 @@
+
+.swiper {
+    padding: 120px 10px 0;
+
+    &-pagination {
+        position: static;
+        margin-top: 24px;
+    }
+    
+    &-pagination-bullet-active {
+        width: 20px;
+        height: 10px;
+        border-radius: 8px;
+        background-color: $yellow;
+      }
+    
+      &-slide {
+          height: initial;
+      }
+}
+
+
+.swiper-max-width {
+    max-width: 1168px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
