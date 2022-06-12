@@ -65,6 +65,7 @@ nav {
 	// background-color: #fff;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
 	.logo {
 		display: inline-block;
@@ -120,7 +121,7 @@ footer {
 		padding: 16px 20px;
 
 		img {
-			max-height: 40px;
+			max-height: 24px;
 		}
 	}
 
