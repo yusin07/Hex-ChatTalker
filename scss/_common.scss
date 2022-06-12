@@ -67,7 +67,8 @@ nav {
 	justify-content: space-between;
 
 	.logo {
-		height: 40px;
+		display: inline-block;
+		max-height: 40px;
 	}
 }
 
@@ -116,7 +117,7 @@ footer {
 		padding: 16px 20px;
 
 		.logo {
-			height: 22px;
+			max-height: 22px;
 		}
 	}
 
