@@ -730,11 +730,10 @@ footer .back-to-top {
     background-image: none;
   }
   header .dot-1 {
-    position: absolute;
     height: 126px;
     width: 49px;
     bottom: -200px;
-    top: auto;
+    top: initial;
     background-size: 126px;
   }
   header .landing {
@@ -768,7 +767,7 @@ footer .back-to-top {
     width: 88px;
     height: 135px;
     right: 0;
-    top: 200px;
+    top: 2950px;
     background-size: 135px 135px;
   }
   .plateform-container {
