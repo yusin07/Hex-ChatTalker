@@ -315,7 +315,8 @@ header {
   background-size: auto 100%;
 }
 
-header .dot-1 {
+header::after {
+  content: "";
   position: absolute;
   height: 360px;
   width: 138px;
@@ -361,23 +362,6 @@ header .landing-image {
   width: 50%;
 }
 
-main {
-  position: relative;
-}
-
-main .dot-2 {
-  z-index: -1;
-  position: absolute;
-  width: 210px;
-  height: 310px;
-  right: 0;
-  top: 826px;
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: 310px 310px;
-}
-
 .plateform-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,6 +395,24 @@ main .dot-2 {
   line-height: 24px;
   text-align: center;
   color: #747474;
+}
+
+.role {
+  position: relative;
+}
+
+.role .dot ::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 210px;
+  height: 310px;
+  right: 0;
+  bottom: -80px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 310px 310px;
 }
 
 .role p {
@@ -553,7 +555,8 @@ main .dot-2 {
   margin-bottom: 100px;
 }
 
-.rating .dot-3 {
+.rating::before {
+  content: "";
   width: 150px;
   height: 150px;
   position: absolute;
@@ -729,10 +732,10 @@ footer .back-to-top {
   header {
     background-image: none;
   }
-  header .dot-1 {
+  header::after {
     height: 126px;
     width: 49px;
-    bottom: -200px;
+    bottom: -130px;
     top: initial;
     background-size: 126px;
   }
@@ -763,13 +766,6 @@ footer .back-to-top {
     background-size: contain;
     background-position: center;
   }
-  main .dot-2 {
-    width: 88px;
-    height: 135px;
-    right: 0;
-    top: 2950px;
-    background-size: 135px 135px;
-  }
   .plateform-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -783,6 +779,12 @@ footer .back-to-top {
   }
   .plateform-card img {
     height: 60px;
+  }
+  .role .dot ::after {
+    width: 88px;
+    height: 135px;
+    bottom: -32px;
+    background-size: 135px 135px;
   }
   .role-wording p {
     font-size: 18px;

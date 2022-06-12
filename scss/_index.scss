@@ -4,7 +4,8 @@ header {
     background-position: top right;
     background-size: auto 100%;
 
-    .dot-1 {
+    &::after {
+        content: "";
         position: absolute;
         height: 360px;
         width: 138px;
@@ -46,23 +47,6 @@ header {
     }
 }
 
-main {
-    position: relative;
-
-    .dot-2 {
-        z-index: -1;
-        position: absolute;
-        width: 210px;
-        height: 310px;
-        right: 0;
-        top: 826px;
-        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg");
-        background-repeat: no-repeat;
-        background-position: top left;
-        background-size: 310px 310px;
-    }
-}
-
 
 
 .plateform {
@@ -95,6 +79,22 @@ main {
 }
 
 .role {
+    position: relative;
+
+    .dot ::after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 210px;
+        height: 310px;
+        right: 0;
+        bottom: -80px;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg");
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 310px 310px;
+    }
+
     p {
         line-height: 29px;
         font-size: 20px;
@@ -216,7 +216,8 @@ main {
     position: relative;
     margin-bottom: 100px;
 
-    .dot-3 {
+    &::before {
+        content: "";
         width: 150px;
         height: 150px;
         position: absolute;
@@ -382,10 +383,10 @@ footer {
     header {
         background-image: none;
 
-        .dot-1 {
+        &::after {
             height: 126px;
             width: 49px;
-            bottom: -200px;
+            bottom: -130px;
             top: initial;
             background-size: 126px;
         }
@@ -424,16 +425,6 @@ footer {
         }
     }
 
-    main {
-        .dot-2 {
-            width: 88px;
-            height: 135px;
-            right: 0;
-            top: 2950px;
-            background-size: 135px 135px;
-        }
-    }
-
     .plateform {
 
         &-container {
@@ -453,6 +444,13 @@ footer {
     }
 
     .role {
+        .dot ::after {
+            width: 88px;
+            height: 135px;
+            bottom: -32px;
+            background-size: 135px 135px;
+        }
+
         &-wording {
             p {
                 font-size: 18px;
