@@ -68,6 +68,9 @@ nav {
 
 	.logo {
 		display: inline-block;
+	}
+
+	img {
 		max-height: 40px;
 	}
 }
@@ -116,8 +119,8 @@ footer {
 		align-items: center;
 		padding: 16px 20px;
 
-		.logo {
-			max-height: 22px;
+		img {
+			max-height: 40px;
 		}
 	}
 
