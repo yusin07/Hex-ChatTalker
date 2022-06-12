@@ -595,8 +595,10 @@ main .dot-2 {
   position: absolute;
   top: -50px;
   width: 80px;
+}
+
+.rating-avatar img {
   border-radius: 50%;
-  overflow: hidden;
 }
 
 .rating-text {

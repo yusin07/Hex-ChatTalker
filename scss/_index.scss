@@ -252,8 +252,10 @@ main {
         position: absolute;
         top: -50px;
         width: 80px;
-        border-radius: 50%;
-        overflow: hidden;
+        
+        img {
+            border-radius: 50%;
+        }
     }
 
     &-text {
