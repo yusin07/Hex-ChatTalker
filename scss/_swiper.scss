@@ -6,6 +6,11 @@
         position: static;
         margin-top: 24px;
     }
+
+    &-pagination-bullet {
+        width: 10px;
+        height: 10px;
+   }
     
     &-pagination-bullet-active {
         width: 20px;

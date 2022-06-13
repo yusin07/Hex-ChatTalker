@@ -13,12 +13,13 @@ body {
 	padding: 12px 32px;
 	justify-content: center;
 	align-items: center;
+	border: solid 1px $primary;
 	background: $primary;
 	font-size: 16px;
 	line-height: 24px;
 	text-decoration: none;
 	color: #fff;
-	border-radius: 22px;
+	border-radius: 27px;
 	transition: 0.3s;
 
 	&:hover {
@@ -26,8 +27,24 @@ body {
 	}
 }
 
+.btn-outline {
+	border: solid 1px $primary;
+	background: #fff;
+	color: $primary;
+
+	&:hover {
+		background: lighten($primary, 30%);
+	}
+
+	&:active {
+		background: $primary;
+		color: #fff;
+	}
+}
+
 .btn-red {
 	background-color: $red;
+	border: solid 1px $red;
 
 	&:hover {
 		background: lighten($red, 10%);
@@ -75,6 +92,24 @@ nav {
 }
 
 footer {
+	.back-to-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 72px;
+        height: 72px;
+		font-family: 'Wendy One', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        position: fixed;
+        z-index: 999;
+        bottom: 32px;
+        right: 32px;
+        background: $primary;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50%;
+    }
 
     .reserved {
         p {
@@ -101,6 +136,19 @@ footer {
 .mb-4 {
 	margin-bottom: 48px;
 }
+
+.mb-5 {
+	margin-bottom: 32px;
+}
+
+.ta-c{
+	text-align: center;
+}
+
+.color-primary {
+	color: $primary;
+}
+
 
 @media (max-width: 576px) {
 	h2 {

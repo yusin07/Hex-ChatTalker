@@ -1,4 +1,4 @@
-header {
+.landing-header {
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
     background-repeat: no-repeat;
     background-position: top right;
@@ -302,25 +302,6 @@ footer {
             margin: 0 auto;
         }
     }
-
-
-    .back-to-top {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 72px;
-        height: 72px;
-        font-size: 20px;
-        font-weight: bold;
-        position: fixed;
-        z-index: 999;
-        bottom: 32px;
-        right: 32px;
-        background: $primary;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 50%;
-    }
 }
 
 @media (max-width: 960px) {
@@ -357,16 +338,12 @@ footer {
             padding: 0;
             margin: 0 auto;
 
+            h2, p {
+                text-align: center;
+            }
+
             br {
                 display: none;
-            }
-
-            h3 {
-                text-align: center;
-            }
-
-            p {
-                text-align: center;
             }
 
             a {
