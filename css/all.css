@@ -196,6 +196,10 @@ body {
   color: #fff;
 }
 
+.btn-outline-selected:hover, .btn-outline-selected:active {
+  background-color: #56C4C5;
+}
+
 .btn-red {
   background-color: #FF5D50;
   border: solid 1px #FF5D50;

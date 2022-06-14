@@ -41,6 +41,10 @@ body {
 	&-selected {
 		background-color: $primary;
 		color: #fff;
+
+		&:hover, &:active {
+			background-color: $primary;
+		}
 	}
 }
 

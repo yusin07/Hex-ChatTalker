@@ -42,11 +42,11 @@
             <div class="plan-wapper max-width">
                 <h2 class="mb-4">彈性選擇，提供您選擇最適合的方案</h2>
                 <ul class="userNum">
-                    <li><button class="btn btn-outline btn-outline-selected">10000位</button></li>
-                    <li><button class="btn btn-outline">15000位</button></li>
-                    <li><button class="btn btn-outline">20000位</button></li>
-                    <li><button class="btn btn-outline">25000位</button></li>
-                    <li><button class="btn btn-outline">>25000位</button></li>
+                    <li><button class="btn btn-outline btn-outline-selected" data-UserNum="10000">10000位</button></li>
+                    <li><button class="btn btn-outline" data-UserNum="15000">15000位</button></li>
+                    <li><button class="btn btn-outline" data-UserNum="20000">20000位</button></li>
+                    <li><button class="btn btn-outline" data-UserNum="25000">25000位</button></li>
+                    <li><button class="btn btn-outline" data-UserNum=">25000">>25000位</button></li>
                 </ul>
                 <div class="plan-container">
                     <div class="plan-card">
@@ -56,29 +56,34 @@
                             <div class="plan-calc mb-5">
                                 <div class="calc">
                                     <p class="title mb-1">訂閱用戶數</p>
-                                    <div><span class="num color-primary">10000</span><span class="unit color-primary">位</span></div>
+                                    <div><span id="basicUserNum" class="num color-primary">10000</span><span
+                                            class="unit color-primary">位</span></div>
                                 </div>
                                 <span class="equal">=</span>
                                 <div class="calc">
                                     <p class="title mb-1">試算每月的費用</p>
-                                    <div><span class="num">600</span><span class="unit">TWD</span></div>
+                                    <div><span id="basicPrice" class="num">600</span><span class="unit">TWD</span></div>
                                 </div>
                             </div>
                             <ul class="plan-features mb-5">
                                 <li>
-                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg"
+                                        alt="">
                                     <p>支援 Messenger / Instagram 或 LINE 渠道</p>
                                 </li>
                                 <li>
-                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg"
+                                        alt="">
                                     <p>10 個進階套件</p>
                                 </li>
                                 <li>
-                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg"
+                                        alt="">
                                     <p>可設定 50 種分眾標籤</p>
                                 </li>
                                 <li>
-                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg"
+                                        alt="">
                                     <p>客服人機轉接</p>
                                 </li>
                             </ul>
@@ -94,29 +99,34 @@
                             <div class="plan-calc mb-5">
                                 <div class="calc">
                                     <p class="title mb-1">訂閱用戶數</p>
-                                    <div><span class="num color-primary">10000</span><span class="unit color-primary">位</span></div>
+                                    <div><span id="standerUserNum" class="num color-primary">10000</span><span
+                                            class="unit color-primary">位</span></div>
                                 </div>
                                 <span class="equal">=</span>
                                 <div class="calc">
                                     <p class="title mb-1">試算每月的費用</p>
-                                    <div><span class="num">1600</span><span class="unit">TWD</span></div>
+                                    <div><span id="standerPrice" class="num">1600</span><span class="unit">TWD</span></div>
                                 </div>
                             </div>
                             <ul class="plan-features mb-5">
                                 <li>
-                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg"
+                                        alt="">
                                     <p>支援多個 Messenger、Instagram 和 LINE 渠道</p>
                                 </li>
                                 <li>
-                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg"
+                                        alt="">
                                     <p>20 個進階及行銷互動套件</p>
                                 </li>
                                 <li>
-                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg"
+                                        alt="">
                                     <p>可設定 500 種分眾標籤</p>
                                 </li>
                                 <li>
-                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/icon_check.svg"
+                                        alt="">
                                     <p>客服人機轉接＋自動指派專員處理</p>
                                 </li>
                             </ul>
@@ -178,18 +188,55 @@
             });
 
 
-            $('.accordion').click(function(){
+            $('.accordion').click(function () {
                 $(this).toggleClass('selected');
-                if($(this).find('.accordion-body').is(':hidden')){
-                    $(this).find('.accordion-body').slideDown(200)
+                if ($(this).find('.accordion-body').is(':hidden')) {
+                    $(this).find('.accordion-body').slideDown(200);
                 } else {
-                    $(this).find('.accordion-body').slideUp(200)
+                    $(this).find('.accordion-body').slideUp(200);
                 }
             });
 
-            $('.userNum .btn').click(function(){
+            $('.btn-outline').click(function () {
+                $(this).addClass('btn-outline-selected');
+                $(this).parent().siblings().find('.btn-outline').removeClass('btn-outline-selected');
+                switch($(this).attr('data-UserNum')){
+                    case '10000':
+                    $('#basicUserNum').text($(this).attr('data-userNum'));
+                    $('#basicPrice').text('600');
+                    $('#standerUserNum').text($(this).attr('data-userNum'));
+                    $('#standerPrice').text('1600');
+                    break
 
-            });
+                    case '15000':
+                    $('#basicUserNum').text($(this).attr('data-userNum'));
+                    $('#basicPrice').text('900');
+                    $('#standerUserNum').text($(this).attr('data-userNum'));
+                    $('#standerPrice').text('1900');
+                    break
+
+                    case '20000':
+                    $('#basicUserNum').text($(this).attr('data-userNum'));
+                    $('#basicPrice').text('1200');
+                    $('#standerUserNum').text($(this).attr('data-userNum'));
+                    $('#standerPrice').text('2200');
+                    break
+
+                    case '25000':
+                    $('#basicUserNum').text($(this).attr('data-userNum'));
+                    $('#basicPrice').text('1500');
+                    $('#standerUserNum').text($(this).attr('data-userNum'));
+                    $('#standerPrice').text('2500');
+                    break
+
+                    case '>25000':
+                    $('#basicUserNum').text($(this).attr('data-userNum'));
+                    $('#basicPrice').text('1800');
+                    $('#standerUserNum').text($(this).attr('data-userNum'));
+                    $('#standerPrice').text('2800');
+                    break
+                }
+            })
 
 
         });
