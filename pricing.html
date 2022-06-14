@@ -42,7 +42,7 @@
             <div class="plan-wapper max-width">
                 <h2 class="mb-4">彈性選擇，提供您選擇最適合的方案</h2>
                 <ul class="userNum">
-                    <li><button class="btn btn-outline">10000位</button></li>
+                    <li><button class="btn btn-outline btn-outline-selected">10000位</button></li>
                     <li><button class="btn btn-outline">15000位</button></li>
                     <li><button class="btn btn-outline">20000位</button></li>
                     <li><button class="btn btn-outline">25000位</button></li>
@@ -99,7 +99,7 @@
                                 <span class="equal">=</span>
                                 <div class="calc">
                                     <p class="title mb-1">試算每月的費用</p>
-                                    <div><span class="num">600</span><span class="unit">TWD</span></div>
+                                    <div><span class="num">1600</span><span class="unit">TWD</span></div>
                                 </div>
                             </div>
                             <ul class="plan-features mb-5">
@@ -128,24 +128,70 @@
                 </div>
             </div>
         </div>
+        <div class="faq max-width">
+            <div class="faq-wapper ">
+                <h2 class="mb-4">常見問題</h2>
+                <div class="faq-container">
+                    <div class="accordion mb-2">
+                        <h3><button class="accordion-btn">我要怎麼變更方案？</button></h3>
+                        <div class="accordion-body mb-2">
+                            <p>請聯絡您的業務專員修改訂閱方案，我們將為您進行變更流程。</p>
+                        </div>
+                    </div>
+                    <div class="accordion mb-2">
+                        <h3><button class="accordion-btn">如果我沒有LINE官方帳號怎麼辦？</button></h3>
+                        <div class="accordion-body">
+                            <p>沒關係的，只要您是我們任何一個方案的夥伴，我們的專員可以協助辦理哦！</p>
+                        </div>
+                    </div>
+                    <div class="accordion mb-2">
+                        <h3><button class="accordion-btn">非上班日有客服支援嗎？</button></h3>
+                        <div class="accordion-body">
+                            <p>當然哦！我們錢都收了，不會拋棄你的！<br>請您直接來我們公司，我們假日也都在辦公室。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="reserved">
+                <p>© 2022 chatTalker. All Rights Reserved.</p>
+            </div>
+        </footer>
     </main>
     <script>
-        jQuery(document).ready(function () {
+        $(document).ready(function () {
             var offset = 220;
             var duration = 500;
-            jQuery(window).scroll(function () {
-                if (jQuery(this).scrollTop() > offset) {
-                    jQuery('.back-to-top').fadeIn(duration);
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > offset) {
+                    $('.back-to-top').fadeIn(duration);
                 } else {
-                    jQuery('.back-to-top').fadeOut(duration);
+                    $('.back-to-top').fadeOut(duration);
                 }
             });
 
-            jQuery('.back-to-top').click(function (event) {
+            $('.back-to-top').click(function (event) {
                 event.preventDefault();
-                jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                $('html, body').animate({ scrollTop: 0 }, duration);
                 return false;
-            })
+            });
+
+
+            $('.accordion').click(function(){
+                $(this).toggleClass('selected');
+                if($(this).find('.accordion-body').is(':hidden')){
+                    $(this).find('.accordion-body').slideDown(200)
+                } else {
+                    $(this).find('.accordion-body').slideUp(200)
+                }
+            });
+
+            $('.userNum .btn').click(function(){
+
+            });
+
+
         });
     </script>
 </body>

@@ -30,18 +30,41 @@
 }
 
 .plan {
+    position: relative;
+
+    &-wapper::after {
+        content: "";
+        width: 94px;
+        height: 361px;
+        position: absolute;
+        z-index: -1;
+        bottom: 100px;
+        left: 0px;
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball03.svg');
+        background-repeat: no-repeat;
+        background-size: 361px;
+        background-position: right;
+    }
+
     .userNum {
         display: flex;
         justify-content: center;
         gap: 16px;
         margin-bottom: 66px;
+
+        .btn {
+            white-space: nowrap;
+        }
     }
 
     &-container {
+        position: relative;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 83.33333333%;
         gap: 16px;
-        margin-bottom: 100px;
-
+        margin: 0 auto 100px auto;
     }
 
     &-card {
@@ -90,7 +113,7 @@
             width: 50%;
             text-align: center;
             height: 108px;
-            padding: 24px 32px;
+            padding: 24px 0;
             background-color: #F5F5F5;
             border-radius: 12px;
         }
@@ -99,8 +122,9 @@
             font-size: 29px;
             color: $black;
         }
-        
-        .title, .unit {
+
+        .title,
+        .unit {
             font-size: 12px;
             line-height: 17px;
         }
@@ -115,5 +139,83 @@
             margin-right: 8px;
         }
     }
+}
 
+.faq {
+    &-wapper {
+        width: 83.33333333%;
+        margin: 0 auto 100px;
+    }
+}
+
+@media (max-width: 960px) {
+    .plan {
+        &-wapper::after {
+            bottom: 400px;
+        }
+
+        .userNum {
+            overflow: scroll;
+        }
+
+        &-container {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .faq {
+        &-wapper {
+            width: 100%;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .pricing-header {
+        height: 567px;
+        margin-bottom: 60px;
+
+        .pricing-banner {
+            width: 100%;
+            margin-bottom: 60px;
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner_sm.svg");
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 100%;
+        }
+    }
+
+    .pricing {
+        &-wording {
+            margin-top: 48px;
+
+            h1 {
+                font-size: 32px;
+                line-height: 46px;
+            }
+        }
+    }
+
+    .plan {
+        &-wapper::after {
+            width: 96px;
+            height: 204px;
+            bottom: 500px;
+            background-size: 204px;
+        }
+
+        .userNum {
+            justify-content: start;
+        }
+
+        &-container {
+            h3 {
+                font-size: 24px;
+                line-height: 35px;
+            }
+        }
+    }
 }
