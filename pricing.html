@@ -105,7 +105,8 @@
                                 <span class="equal">=</span>
                                 <div class="calc">
                                     <p class="title mb-1">試算每月的費用</p>
-                                    <div><span id="standerPrice" class="num">1600</span><span class="unit">TWD</span></div>
+                                    <div><span id="standerPrice" class="num">1600</span><span class="unit">TWD</span>
+                                    </div>
                                 </div>
                             </div>
                             <ul class="plan-features mb-5">
@@ -200,41 +201,41 @@
             $('.btn-outline').click(function () {
                 $(this).addClass('btn-outline-selected');
                 $(this).parent().siblings().find('.btn-outline').removeClass('btn-outline-selected');
-                switch($(this).attr('data-UserNum')){
+                switch ($(this).attr('data-UserNum')) {
                     case '10000':
-                    $('#basicUserNum').text($(this).attr('data-userNum'));
-                    $('#basicPrice').text('600');
-                    $('#standerUserNum').text($(this).attr('data-userNum'));
-                    $('#standerPrice').text('1600');
-                    break
+                        $('#basicUserNum').text($(this).attr('data-userNum'));
+                        $('#basicPrice').text('600');
+                        $('#standerUserNum').text($(this).attr('data-userNum'));
+                        $('#standerPrice').text('1600');
+                        break
 
                     case '15000':
-                    $('#basicUserNum').text($(this).attr('data-userNum'));
-                    $('#basicPrice').text('900');
-                    $('#standerUserNum').text($(this).attr('data-userNum'));
-                    $('#standerPrice').text('1900');
-                    break
+                        $('#basicUserNum').text($(this).attr('data-userNum'));
+                        $('#basicPrice').text('900');
+                        $('#standerUserNum').text($(this).attr('data-userNum'));
+                        $('#standerPrice').text('1900');
+                        break
 
                     case '20000':
-                    $('#basicUserNum').text($(this).attr('data-userNum'));
-                    $('#basicPrice').text('1200');
-                    $('#standerUserNum').text($(this).attr('data-userNum'));
-                    $('#standerPrice').text('2200');
-                    break
+                        $('#basicUserNum').text($(this).attr('data-userNum'));
+                        $('#basicPrice').text('1200');
+                        $('#standerUserNum').text($(this).attr('data-userNum'));
+                        $('#standerPrice').text('2200');
+                        break
 
                     case '25000':
-                    $('#basicUserNum').text($(this).attr('data-userNum'));
-                    $('#basicPrice').text('1500');
-                    $('#standerUserNum').text($(this).attr('data-userNum'));
-                    $('#standerPrice').text('2500');
-                    break
+                        $('#basicUserNum').text($(this).attr('data-userNum'));
+                        $('#basicPrice').text('1500');
+                        $('#standerUserNum').text($(this).attr('data-userNum'));
+                        $('#standerPrice').text('2500');
+                        break
 
                     case '>25000':
-                    $('#basicUserNum').text($(this).attr('data-userNum'));
-                    $('#basicPrice').text('1800');
-                    $('#standerUserNum').text($(this).attr('data-userNum'));
-                    $('#standerPrice').text('2800');
-                    break
+                        $('#basicUserNum').text($(this).attr('data-userNum'));
+                        $('#basicPrice').text('1800');
+                        $('#standerUserNum').text($(this).attr('data-userNum'));
+                        $('#standerPrice').text('2800');
+                        break
                 }
             })
 
